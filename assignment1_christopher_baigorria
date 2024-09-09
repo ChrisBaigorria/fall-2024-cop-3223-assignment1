@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int main(int argc, char **argv);
 double calculateDistance();
 double calculatePerimeter();
@@ -12,13 +13,16 @@ double calculateWidth();
 double calculateHeight();
 double askForUserInput();
 
+
 void printPoint(int pointNum, double x, double y);
+
 
 double x1, y1, x2, y2;
 
 int main(int argc, char **argv) {
     printf("Calculating circle dimensions from two points representing the diameter.\n");
 
+    
     calculateDistance();
     calculatePerimeter();
     calculateArea();
@@ -27,6 +31,7 @@ int main(int argc, char **argv) {
 
     return 0; 
 }
+
 
 double calculateDistance() {
     printf("Enter Point #1 coordinates:\n");
@@ -45,6 +50,7 @@ double calculateDistance() {
 
     return distance;
 }
+
 
 double calculatePerimeter() {
     double distance = calculateDistance();
@@ -69,6 +75,7 @@ double calculateArea() {
     return 3.0;
 }
 
+
 double calculateWidth() {
     double distance = calculateDistance();
 
@@ -89,9 +96,11 @@ double calculateHeight() {
     return 2.5;
 }
 
+
 void printPoint(int pointNum, double x, double y) {
     printf("Point #%d entered: x%d = %.2lf; y%d = %.2lf\n", pointNum, pointNum, x, pointNum, y);
 }
+
 
 double askForUserInput() {
     double value;
@@ -99,7 +108,3 @@ double askForUserInput() {
     scanf("%lf", &value);
     return value;
 }
-
-
-
-
